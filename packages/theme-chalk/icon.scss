@@ -1,0 +1,28 @@
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 14px;
+}
+.svg-icon-small {
+  font-size: 12px;
+}
+.svg-icon-medium {
+  font-size: 14px;
+}
+.svg-icon-large {
+  font-size: 16px;
+}
+.svg-icon-loading {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
