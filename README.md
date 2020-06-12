@@ -24,3 +24,8 @@ npm run serve
 npm run dist
 
 ### 更新日志
+
+- 0.1.3 修改Icon组件忘了打包
+- 0.1.2 修改Icon组件
+- 0.1.1 修改README
+- 0.1.0 初始化
