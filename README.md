@@ -1,24 +1,26 @@
-# dd-ui
+# dd-ui-vue 
+### 学习ui组件库
 
-## Project setup
-```
-npm install
-```
+- 版本       version 0.1.0
+- 环境依赖   node v10.0.0+ 
 
-### Compiles and hot-reloads for development
+---
+
+### 项目地址
+
+https://github.com/1985zrd/dd-ui.git
+
+---
+
+### 项目启动/打包
 ```
+#安装依赖      
+npm i
+
+#启动dev server 
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#打包          
+npm run dist
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 更新日志
