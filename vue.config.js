@@ -1,31 +1,23 @@
 var path = require('path')
 
 module.exports = {
-  css: {
-    loaderOptions: {
-      less: {
-        modifyVars: {},
-        javascriptEnabled: true
-      }
-    }
-  },
   configureWebpack: config => {
     config.entry.app = ['./examples/main.js']
 
-    // config.module.rules.push(
-    //   {
-    //     // 处理markdown文件
-    //     test: /\.md$/,
-    //     use: [
-    //       {
-    //         loader: 'vue-loader'
-    //       },
-    //       {
-    //         loader: require.resolve('./markdownLoader')
-    //       }
-    //     ]
-    //   }
-    // )
+    config.module.rules.push(
+      {
+        // 处理markdown文件
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'vue-loader'
+          },
+          {
+            loader: require.resolve('./plugins/markdownLoader')
+          }
+        ]
+      }
+    )
     // config.plugins.push(createThemeColorReplacerPlugin())
   },
   // 扩展 webpack 配置，使 packages 加入编译

@@ -2,7 +2,6 @@
 node_modules
 dist
 build
-packages
 examples
 public
 src
@@ -27,6 +26,7 @@ yarn-error.log*
 
 babel.config.js
 vue.config.js
+jest.config.js
 componentList.js
 postcss.config.js
 教程.MD

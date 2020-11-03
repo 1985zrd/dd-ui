@@ -11,8 +11,10 @@
   align-items: center;
 }
 .cookie-toast--dialog {
+  color: $--color-primary;
   max-width: 80vw;
-  background-color: #333;
+  // background-color: #333;
+  background-color: $--color-black;
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;

@@ -42,12 +42,20 @@ module.exports = merge(webpackLibBaseConfig, {
             // options: {
             //   implementation: require('dart-sass')
             // }
-          },
+          }
           // {
           //   loader: 'postcss-loader'
           // }
         ]
       },
+      {
+        test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: "./fonts/[name].[ext]",
+          publicPath: './'
+        }
+      }
     ]
   },
   plugins: [
